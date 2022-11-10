@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#284d8c;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  background: transparent;
+  transition: background-color 0.4s;
+}
+.navbar h3{
+    font-size: 2.5rem;
+    color: rgb(211, 191, 191);
+    font-family: cursive;
+}
+.navbar h3 span{
+  
+    color: rgb(194, 226, 175);
+}
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+  font-size: 1.3rem;
+}
+.navbar ul li a:hover {
+  color: rgb(216, 25, 25);
+}
+.hero {
+    height: 90vh;
+    background: url("https://cdn.pixabay.com/photo/2016/09/29/13/08/planet-1702788_960_720.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+    /* background-color: rgb(97, 48, 48); */
+}
+.hero h2{
+    font-size: 3rem;
+}
+.bottom-text{
+    padding: 3rem;
+   
+}
+.bottom-text h2{
+    text-align: center;
+}
+.bottom-text p{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+.active{
+    background: #284d8c;
+}

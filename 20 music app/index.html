@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Music app</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="sources/spotify.png" alt="Spotify">MuSiC</li>
+            <li><a href="../index.html">Home</a> </li>
+            <li><a href="./about.html">About</a> </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Best of NCS</h1>
+        <div class="songList">
+
+
+        </div>
+
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="progressBar" min="0" max="100" value="0">
+        <div class="icons">
+            <i class="fa-solid fa-3x  fa-backward-step"></i>
+            <i class="fa-regular fa-3x fa-circle-play masterPlay"></i>
+            <i class="fa-solid fa-3x fa-forward-step"></i>
+        </div>
+        <div class="songName bottomSongName"></div><span class="gif"><img src="sources/bgAnimatin.gif" alt=""></span>
+    </div>
+</body>
+
+</html>

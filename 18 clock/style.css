@@ -1,0 +1,89 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.back   {
+    position: absolute;
+    top:2%;
+    left:2%;
+
+}
+.back li{
+    list-style: none;
+}
+.back a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.514);
+}
+.clock{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_960_720.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 1rem;
+}
+.clock h1{
+    color: white;
+}
+.c-wrapper{
+    display: flex;
+  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+  
+    height:6rem;
+    
+}
+.container span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    opacity: 0.8;
+}
+.container :nth-child(1){
+    padding: 1rem;
+    background-color: blueviolet;
+   
+    
+}
+.container :nth-child(2){
+    font-size: 0.6rem;
+    background-color: black;
+    background-color: rgb(71, 2, 134);
+    padding: 0.4rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#ampm{
+    height: 6rem;
+    background-color: rgb(38, 98, 43);
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.8;
+}

@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: pink;
+    padding: 1rem;
+}
+.back   {
+    position: absolute;
+    top:2%;
+    left:2%;
+
+}
+.back li{
+    list-style: none;
+}
+.back a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.514);
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    
+}
+.box{
+
+    padding: 3rem 3rem;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px black;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.397);
+    
+}
+.box span{
+    text-transform: capitalize;
+}
+.box span:hover{
+   color: red;
+}
+
+
+.crash{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQih6JAnmpsfe91kbveu-G1LSZ4eHhz4SG2NA&usqp=CAU");
+    background-size: 100%;
+    background-position: center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+.kick{
+    background: url("https://i.etsystatic.com/19560896/r/il/9519d1/1859256923/il_fullxfull.1859256923_6hlw.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-position: center;
+}
+.snare{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwaX6oiYiXhH2CzJZH63MhcTETRWqVLNaYLg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+}
+.tom{
+    background: url("https://image.shutterstock.com/image-vector/floor-tom-drum-simple-style-260nw-617822285.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-position: top;
+}
+
+@media screen and (max-width:800px) {
+    .image-container{
+       
+        grid-template-columns: repeat(2,1fr);
+       
+        
+    }
+}

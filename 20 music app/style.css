@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ background-color: rgb(48, 48, 48); 
+    font-family: sans-serif;
+    font-size: 62.5%;
+    /* background: url("https://cdn.pixabay.com/photo/2021/12/13/21/43/drummer-6869168_960_720.jpg"); */
+    /* background-size: cover; */
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 4rem;
+    color: white;
+    list-style: none;
+}
+nav ul li{
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+   
+}
+.brand img{
+    width: 2.5rem;
+}
+.container{
+    min-height: 70vh;
+    background: url("https://cdn.pixabay.com/photo/2017/03/27/15/13/man-2179313_960_720.jpg");
+    color: white;
+    width: 60%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.bottom{
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  
+ 
+}
+.icons{
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+
+}
+#progressBar{
+    width: 80%;
+    cursor: pointer;
+    /* margin-top: 1rem; */
+}
+.container h1{
+    margin-bottom: 2rem;
+}
+.songItem{
+    margin: 0.5rem 0;
+    display: grid;
+    grid-template-columns:0.5fr 2fr 1.5fr 1fr;
+    align-items: center;
+    border: 2px solid white;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    width: 50%;
+    justify-content: space-between;
+  
+}
+@media screen and (max-width:900px) {
+    .songItem{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .songItem{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
+.songItem img{
+    width: 1.5rem;
+    border-radius: 50%;
+}
+.songName{
+    font-size: 1rem;
+    text-align: center;
+}
+.duration{
+    font-size: 0.8rem;
+  text-align: center;
+}
+
+.playIcon{
+
+    text-align: center;
+}
+.bottomSongName{
+    position: absolute;
+    left: 10vw;
+    top: 50%;
+}
+.gif img{
+    position: absolute;
+    right: 10vw;
+    top: 50%;
+    width: 5rem;
+    height: 1rem;
+    margin-left: 2rem;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.aboutPara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    font-size: 3rem;
+    font-family: cursive;
+    color: white;
+    padding: 5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    
+    color: rgb(197, 88, 88);
+}
